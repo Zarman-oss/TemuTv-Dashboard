@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next Dashboard',
-  description: 'Modern dashboard',
+  title: 'TemuTv Dashboard',
+  description: 'This is for admin people at TemuTv.',
 };
 
 export default function RootLayout({
