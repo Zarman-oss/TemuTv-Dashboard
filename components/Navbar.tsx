@@ -3,18 +3,18 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import Avvvatars from 'avvvatars-react';
 import {
-  LayoutDashboard,
-  Menu as MenuIcon,
-  X as XIcon,
-  User,
-  LogOut,
-  LogIn,
   BarChart2,
+  LogIn,
+  LogOut,
+  LucideTv,
+  Menu as MenuIcon,
+  User,
+  X as XIcon,
 } from 'lucide-react';
 import { Session } from 'next-auth';
 import { signIn, signOut } from 'next-auth/react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navigation = [
@@ -41,8 +41,8 @@ export default function Navbar({ user }: Props) {
             <div className='flex h-16 justify-between'>
               <div className='flex'>
                 <div className='text-blue-700 flex font-bold flex-shrink-0 items-center'>
-                  <LayoutDashboard className='mr-2 w-8 h-8' />
-                  <span>Next Dashboard</span>
+                  <LucideTv className=' w-10 h-10' />
+                  <span className=''>TemuTv</span>
                 </div>
 
                 <div className='hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8'>
