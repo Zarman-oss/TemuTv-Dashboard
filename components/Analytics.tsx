@@ -1,6 +1,7 @@
 'use client';
 
 import { BarList, Card, Flex, Grid, Metric, Text, Title } from '@tremor/react';
+import Chart from '@/components/Chart';
 
 const newUserStats = [
   { name: 'New Users', value: 230 },
@@ -66,6 +67,7 @@ export default function Analytics() {
           </Card>
         ))}
       </Grid>
+      <Chart />   
     </main>
   );
 }
