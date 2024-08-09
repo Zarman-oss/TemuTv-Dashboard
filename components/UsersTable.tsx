@@ -1,5 +1,4 @@
-import { Tab } from '@headlessui/react';
-import { User } from '@prisma/client';
+import { User } from "@prisma/client";
 import {
   Table,
   TableBody,
@@ -7,7 +6,7 @@ import {
   TableHead,
   TableHeaderCell,
   TableRow,
-} from '@tremor/react';
+} from "@tremor/react";
 
 type Props = {
   users: User[];
@@ -29,7 +28,7 @@ export default function UsersTable({ users }: Props) {
             <TableCell>{user.name}</TableCell>
             <TableCell>{user.email}</TableCell>
             <TableCell>
-              {new Intl.DateTimeFormat('en-US').format(user.createdAt)}
+              {new Intl.DateTimeFormat("en-US").format(user.createdAt)}
             </TableCell>
           </TableRow>
         ))}
