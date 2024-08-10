@@ -1,7 +1,7 @@
-import prisma from '@/lib/prisma';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import NextAuth, { AuthOptions } from 'next-auth';
-import Github from 'next-auth/providers/github';
+import prisma from "@/lib/prisma";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import NextAuth, { AuthOptions } from "next-auth";
+import Github from "next-auth/providers/github";
 
 export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
@@ -12,14 +12,14 @@ export const authOptions: AuthOptions = {
     }),
   ],
 
-  debug: process.env.NODE_ENV === 'development',
+  debug: process.env.NODE_ENV === "development",
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async signIn() {
       return true;
     },
     async redirect() {
-      return '/';
+      return "/";
     },
   },
 };
